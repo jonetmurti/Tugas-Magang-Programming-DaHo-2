@@ -24,7 +24,8 @@ int main(int argc, char **argv) {
 
     ros::NodeHandle nh;
 
-    ros::ServiceServer service = nh.advertiseService("add_int", add);
+    ros::ServiceServer serviceadd = nh.advertiseService("add_int", add);
+    ros::ServiceServer servicetime = nh.advertiseService("add_int", time);
 
     ROS_INFO("server running...");
 
