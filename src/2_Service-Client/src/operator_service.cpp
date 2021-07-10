@@ -22,7 +22,7 @@ int main(int argc, char **argv) {
 
     ros::init(argc, argv, "server");
 
-    ros::NodeHandle n;
+    ros::NodeHandle nh;
 
     ros::ServiceServer service = n.advertiseService("add_int", add);
 
