@@ -5,7 +5,7 @@ int main(int argc, char **argv) {
 
     ros::init(argc, argv, "client");
 
-    ros::NodeHandle n;
+    ros::NodeHandle nh;
 
     ros::ServiceClient add_client = n.serviceClient<intro::arithmetic>("add_int");
 
