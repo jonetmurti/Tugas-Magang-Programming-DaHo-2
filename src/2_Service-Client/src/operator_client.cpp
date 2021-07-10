@@ -7,7 +7,7 @@ int main(int argc, char **argv) {
 
     ros::NodeHandle nh;
 
-    ros::ServiceClient add_client = n.serviceClient<intro::arithmetic>("add_int");
+    ros::ServiceClient add_client = nh.serviceClient<intro::arithmetic>("add_int");
 
     ROS_INFO("client running...");
 
