@@ -1,5 +1,5 @@
 #include "ros/ros.h"
-#include "intro/arithmetic.h"
+#include "service_client/Operation.h"
 
 bool add(intro::arithmetic::Request  &req,
          intro::arithmetic::Response &res)
@@ -8,6 +8,15 @@ bool add(intro::arithmetic::Request  &req,
 
     return true;
 }
+
+bool time(intro::arithmetic::Request  &req,
+         intro::arithmetic::Response &res)
+{
+    res.result = req.a * req.b;
+
+    return true;
+}
+
 
 int main(int argc, char **argv) {
 
